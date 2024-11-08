@@ -1,0 +1,101 @@
+{
+	"name": "TaxiRidesCsvDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "TaxiRides.csv",
+				"folderPath": "Raw",
+				"fileSystem": "taxidata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "RideId",
+				"type": "String"
+			},
+			{
+				"name": "VendorId",
+				"type": "String"
+			},
+			{
+				"name": "PickupTime",
+				"type": "String"
+			},
+			{
+				"name": "DropTime",
+				"type": "String"
+			},
+			{
+				"name": "PickupLocationId",
+				"type": "String"
+			},
+			{
+				"name": "DropLocationId",
+				"type": "String"
+			},
+			{
+				"name": "CabNumber",
+				"type": "String"
+			},
+			{
+				"name": "DriverLicenseNumber",
+				"type": "String"
+			},
+			{
+				"name": "PassengerCount",
+				"type": "String"
+			},
+			{
+				"name": "TripDistance",
+				"type": "String"
+			},
+			{
+				"name": "RateCodeId",
+				"type": "String"
+			},
+			{
+				"name": "PaymentType",
+				"type": "String"
+			},
+			{
+				"name": "TotalAmount",
+				"type": "String"
+			},
+			{
+				"name": "FareAmount",
+				"type": "String"
+			},
+			{
+				"name": "Extra",
+				"type": "String"
+			},
+			{
+				"name": "MtaTax",
+				"type": "String"
+			},
+			{
+				"name": "TipAmount",
+				"type": "String"
+			},
+			{
+				"name": "TollsAmount",
+				"type": "String"
+			},
+			{
+				"name": "ImprovementSurcharge",
+				"type": "String"
+			}
+		]
+	}
+}
