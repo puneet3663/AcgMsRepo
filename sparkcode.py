@@ -23,5 +23,18 @@ df2 = spark.createDataFrame(data2, ["id", "age", "married_status"])
 
 joined_df=df1.join(df2,"id")
 
+
+############################### Broad Case Join ************************
+
+data3 = [(1, "DeptA"),
+         (2, "DeptB"),
+         (3, "DeptC"),
+         (4, "DeptD"),
+         (5, "DeptE")]
+
+df3=spark.createDataFrame(data3, ["id","department"])
+
+joined_df = df1.join(df2, "id").join(df3.hint("broadcast"), "id")
+
 joined_df.show()
-spark.stop()
+
