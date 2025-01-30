@@ -1,3 +1,11 @@
 hello
 
 * hello 2
+
+The barcode scanner is one early example of CV in use.
+When your camera identifies a face and auto-focuses on it; when Facebook auto-suggests whom to tag in a photo; even when a car drives automatically — these are all examples of CV in action.
+from traffic inspectors to MRI scan-analysis experts, sports umpires to checkout assistants, truck drivers to equipment inspectors
+Two types of CV exist: Classic and deep learning.
+Classic CV:
+relies on pre-built libraries of features.
+It collects images, labels them according to similar characteristics, and groups them in a dataset, or library of features.
